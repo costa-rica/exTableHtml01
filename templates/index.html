@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {background-color: gray;}
+    body {background-color: lightgray;}
     h1 {color: orange}
   </style>
   <title>Home</title>
 </head>
 <body>
   <h1>Home Page</h1>
-  <a href="{{ url_for('table') }}">Go To Table Page</a>
+  <a href="{{ url_for('table_cdn') }}">Go To Table Page that uses CDN</a><br><br>
+  <a href="{{ url_for('table') }}">Go To Table Page that uses downloaded files</a>
 </body>
 </html>
